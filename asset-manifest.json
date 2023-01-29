@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/surajsoni2/WeatherApp.git/static/css/main.93ebb22d.css",
+    "main.js": "/surajsoni2/WeatherApp.git/static/js/main.175e6464.js",
+    "index.html": "/surajsoni2/WeatherApp.git/index.html",
+    "main.93ebb22d.css.map": "/surajsoni2/WeatherApp.git/static/css/main.93ebb22d.css.map",
+    "main.175e6464.js.map": "/surajsoni2/WeatherApp.git/static/js/main.175e6464.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93ebb22d.css",
+    "static/js/main.175e6464.js"
+  ]
+}
