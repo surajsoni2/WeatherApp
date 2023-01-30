@@ -1,0 +1,201 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@500;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d9e5f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.wrap{
+    padding: 0 180px;
+}
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.search input{
+    width: 40%;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+
+}
+.search button{
+    border: none;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 0 50px 50px 0;
+    padding: 10px;
+
+}
+.container {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.place{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color:rgb(14, 48, 85);
+
+}
+.place i{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.date{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color:rgb(13, 34, 56);
+}
+.weekDay{
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    color:rgb(13, 34, 56);
+}
+.icon{
+    font-size: 200px;
+    color: #3C3783;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+
+div.temparature i{
+    font-size: 65px;
+    color: #ff6131;
+}
+div.temparature span{
+    margin-left: 10px;
+    font-size: 50px;
+}
+.weatherCondition{
+    font-size: 30px;
+    color: #3C3783;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.card{
+    padding: 0 20px;
+    border-radius: 20px;
+    background-color: rgba(187, 170, 255, 0.1);
+    box-shadow: rgba(61, 12, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+}
+.propIcon{
+    margin-top: 10px;
+    margin-bottom: 0;    
+    font-size: 50px;
+    color: #ff6131;
+}
+p.propValue span{
+    text-transform: capitalize;
+    font-weight: bold;
+    color:#3C3783;
+}
+
+footer{
+    background-color: #3C3783;
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    color: #ff6131;
+}
+
+@media only screen and (max-width: 600px) {
+    /* body{
+        max-width: 100vh;
+    } */
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.search input{
+    width: 300px;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+
+}
+.search button{
+    border: none;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 0 50px 50px 0;
+    padding: 10px;
+
+}
+    .container {
+        flex-direction: column;
+    }
+    .place{
+        display: none;
+    }
+    .date{
+        display: none;
+    }
+    .temparature{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(61, 12, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 20px;
+        padding: 10px; 
+        flex-wrap: wrap;
+    }
+    .weatherCondition{
+        width: 300px;
+        text-align: center;
+    }
+    .cards{
+        margin-top: 100px;
+        flex-direction: column;
+        padding: 0;
+    }
+    .card{
+        margin-top: 50px;
+        width: 200px;
+        padding: 0 20px;
+        border-radius: 20px;
+        background-color: rgba(187, 170, 255, 0.1);
+        box-shadow: rgba(61, 12, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        text-align: center;
+    }
+    footer{
+        position: relative;
+        bottom: 0;
+        margin-top: 50px;
+        padding: 20px 0;
+    }
+}
